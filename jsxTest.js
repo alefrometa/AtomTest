@@ -7,6 +7,6 @@ var Button = React.createClass({
   },
 
   render: function () {
-    return <button onClick={this.scream}>AAAAAH I kill you!</button>;
+    return <button onClick={this.scream}>Silence, I kill you!</button>;
   }
 });
