@@ -3,9 +3,9 @@ console.log("Hello world!!");
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Button = React.createClass({
+let Button = React.createClass({
   scream: function () {
-    alert('AAAAAAAAHHH!!!! lulz');
+    alert('AAAAAAAAHHH!!!!');
   },
   render: function () {
     return (
