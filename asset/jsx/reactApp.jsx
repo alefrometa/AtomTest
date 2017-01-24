@@ -9,7 +9,9 @@ let Button = React.createClass({
   },
   render: function () {
     return (
-      <button type="button" onClick={this.scream}>Scream! </button>
+      <div class="container">
+      <button type="button" className="btn btn-default" onClick={this.scream}><a href='#' class="btn btn-default">Scream!</a></button>
+      </div>
     );
   }
 });

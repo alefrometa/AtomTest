@@ -62,9 +62,17 @@
 	  },
 	  render: function render() {
 	    return React.createElement(
-	      'button',
-	      { type: 'button', onClick: this.scream },
-	      'Scream! '
+	      'div',
+	      { 'class': 'container' },
+	      React.createElement(
+	        'button',
+	        { type: 'button', className: 'btn btn-default', onClick: this.scream },
+	        React.createElement(
+	          'a',
+	          { href: '#', 'class': 'btn btn-default' },
+	          'Scream!'
+	        )
+	      )
 	    );
 	  }
 	});
