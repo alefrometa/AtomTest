@@ -1,3 +1,5 @@
+console.log("Hello world!");
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 
@@ -5,8 +7,11 @@ var Button = React.createClass({
   scream: function () {
     alert('AAAAAAAAHHH!!!! lol');
   },
-
   render: function () {
-    return <button onClick={this.scream}>Cows and chickens, Silence, I kill you!!</button>;
+    return (
+      <button type="button" onClick={this.scream}>Scream! </button>
+    );
   }
 });
+
+ReactDOM.render(<Button />, document.getElementById('app') );
