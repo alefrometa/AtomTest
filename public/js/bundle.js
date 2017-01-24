@@ -47,7 +47,7 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	console.log("Hello world!");
+	console.log("Hello world!!");
 	
 	var React = __webpack_require__(/*! react */ 1);
 	var ReactDOM = __webpack_require__(/*! react-dom */ 32);
