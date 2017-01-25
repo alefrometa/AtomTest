@@ -47,37 +47,92 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	console.log("Hello world!!");
 	
-	var React = __webpack_require__(/*! react */ 1);
-	var ReactDOM = __webpack_require__(/*! react-dom */ 32);
+	var Layout = function (_React$Component) {
+	  _inherits(Layout, _React$Component);
 	
-	var Button = React.createClass({
-	  displayName: 'Button',
+	  function Layout() {
+	    _classCallCheck(this, Layout);
 	
-	  scream: function scream() {
+	    return _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).apply(this, arguments));
+	  }
+	
+	  _createClass(Layout, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "container" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "It Works! Ehehehehehe?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "And this is how you template out  a React app"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "mom" },
+	          "Yo mama joke here"
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Layout;
+	}(_react2.default.Component);
+	
+	var app = document.getElementById('app');
+	_reactDom2.default.render(_react2.default.createElement(Layout, null), app);
+	
+	/*
+	var React = require('react');
+	var ReactDOM = require('react-dom');
+
+	//Routing
+	var Router = require('react-router').Router;
+	var Route = require('react-router').Route;
+	var Link = require('react-router').Link;
+
+	let Button = React.createClass({
+	  scream: function () {
 	    alert('AAAAAAAAHHH!!!!');
 	  },
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      { 'class': 'container' },
-	      React.createElement(
-	        'button',
-	        { type: 'button', className: 'btn btn-default', onClick: this.scream },
-	        React.createElement(
-	          'a',
-	          { href: '#', 'class': 'btn btn-default' },
-	          'Scream!'
-	        )
-	      )
+	  render: function () {
+	    return (
+	      <div className="container">
+	      <button type="button" className="btn btn-default" onClick={this.scream}><a href='#'>Scream!</a></button>
+	      </div>
 	    );
 	  }
 	});
-	
-	ReactDOM.render(React.createElement(Button, null), document.getElementById('app'));
+
+	ReactDOM.render(<Button />, document.getElementById('app') );
+	*/
 
 /***/ },
 /* 1 */
