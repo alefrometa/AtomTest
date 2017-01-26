@@ -71,7 +71,12 @@
 	      React.createElement(
 	        'h3',
 	        null,
-	        'This is justa jest...uh test..jest test.'
+	        'This is justa jest...uh test..jest test'
+	      ),
+	      React.createElement(
+	        'button',
+	        { className: 'btn btn-default', onClick: this.scream },
+	        'Click Me!'
 	      )
 	    );
 	  }
