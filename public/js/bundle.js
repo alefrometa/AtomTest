@@ -67,7 +67,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	console.log("Hello world!!");
+	console.log("Hello world!");
 	
 	var Layout = function (_React$Component) {
 	  _inherits(Layout, _React$Component);
@@ -92,7 +92,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "And this is how you template out  a React app"
+	          "And this is how you template out a React app"
 	        ),
 	        _react2.default.createElement(
 	          "p",

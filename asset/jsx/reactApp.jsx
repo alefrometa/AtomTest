@@ -1,4 +1,4 @@
-console.log("Hello world!!");
+console.log("Hello world!");
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -8,7 +8,7 @@ class Layout extends React.Component{
     return (
       <div className="container">
         <h1>It Works! Ehehehehehe?</h1>
-        <p>And this is how you template out  a React app</p>
+        <p>And this is how you template out a React app</p>
         <p className="mom">Yo mama joke here</p>
       </div>
     );
