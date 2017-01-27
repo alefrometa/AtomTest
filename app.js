@@ -23,7 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 //app.use('/users', users);
-app.listen(process.env.PORT, function () {
+//APP.LISTEN change if running project on cloud or locally
+app.listen(3000, function () {
   console.log('Example app running')
 });
 // catch 404 and forward to error handler
