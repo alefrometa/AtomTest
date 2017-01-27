@@ -10,6 +10,7 @@ var Button = React.createClass({
     return (<div className="container">
       <h1>Hello There!</h1>
       <h3>Well damn this continous deployment thing kind of works</h3>
+      <h2>Thus I am way stronger</h2>
       <button className="btn btn-default" onClick={this.scream}>Click Me!</button>
     </div>
     );

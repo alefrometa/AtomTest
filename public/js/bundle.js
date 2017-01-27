@@ -71,6 +71,11 @@
 	        'Well damn this continous deployment thing kind of works'
 	      ),
 	      React.createElement(
+	        'h2',
+	        null,
+	        'Thus I am way stronger'
+	      ),
+	      React.createElement(
 	        'button',
 	        { className: 'btn btn-default', onClick: this.scream },
 	        'Click Me!'
