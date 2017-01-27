@@ -10,8 +10,8 @@ var routes = require('./routes/routes');
 var app = express();
 
 // Environment: process.env.PORT for c9.io
-// var environment = 3000;
-var enviroment = process.env.PORT;
+// var environment = //3000;
+var environment = process.env.PORT;
 
 // view engine setup
 app.set('views', path.join(__dirname, '/public/views'));
