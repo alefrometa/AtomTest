@@ -10,9 +10,10 @@ var routes = require('./routes/routes');
 var app = express();
 
 // Environment: process.env.PORT for c9.io
-var env = //3000;
-  process.env.PORT;
+var environment = //3000;
+  "process.env.PORT";
 // view engine setup
+console.log(env.toString());
 app.set('views', path.join(__dirname, '/public/views'));
 app.set('view engine', 'pug');
 
@@ -27,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 //app.use('/users', users);
 //APP.LISTEN change if running project on cloud or locally
-app.listen(3000, function () {
+app.listen(environment, function () {
   console.log('Example app running')
 });
 // catch 404 and forward to error handler
