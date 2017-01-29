@@ -3,12 +3,12 @@ var ReactDOM = require('react-dom');
 
 var Button = React.createClass({
   scream: function () {
-    alert('AAAAAAAAHHH!!!!!');
+    alert('Sell A LOT of cars!');
   },
 
   render: function () {
     return (<div className="container">
-      <h1>Hello There!</h1>
+      <h1>Hello There Manuel!</h1>
       <h3>Well damn this continous deployment thing kind of works</h3>
       <h2>Thus I am way stronger</h2>
       <h4>..and <em>flexible</em></h4>
