@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 
 var Button = React.createClass({
   scream: function () {
-    alert('Sell A LOT of cars!!');
+    alert('Sell A LOT of cars!');
   },
 
   render: function () {
